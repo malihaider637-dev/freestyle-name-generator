@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freestyle Name Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎨 Freestyle Name Generator</h1>
+    <p class="subtitle">Generate unique, creative names for your next idea.</p>
+
+    <input type="text" id="keyword" placeholder="Enter a theme or keyword (optional)" />
+
+    <div class="style-toggle">
+      <label>
+        <input type="radio" name="style" value="unique" checked>
+        Unique (Brand-style)
+      </label>
+      <label>
+        <input type="radio" name="style" value="freestyle">
+        Freestyle (Cool/Random)
+      </label>
+    </div>
+
+    <button id="generateBtn">🚀 Generate</button>
+
+    <div class="output">
+      <h2 id="generatedName">Your name will appear here</h2>
+      <div class="buttons">
+        <button id="regenBtn">🔁 Generate Again</button>
+        <button id="copyBtn">📋 Copy Name</button>
+      </div>
+    </div>
+
+    <div class="history">
+      <h3>🕒 Recent Names</h3>
+      <ul id="historyList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
